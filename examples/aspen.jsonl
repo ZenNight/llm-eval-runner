@@ -1,0 +1,10 @@
+# Process engineering questions in the style of Sentinel Copilot for Aspen.
+# Expand this file to 30 to 50 cases and report the score in the Sentinel README.
+{"id": "p01", "prompt": "In Aspen HYSYS, which property package is the usual default choice for hydrocarbon systems such as natural gas processing?", "expected": ["Peng-Robinson", "Peng Robinson", "PR"], "match": "regex", "tags": ["hysys", "thermo"]}
+{"id": "p02", "prompt": "In Aspen Plus, which thermodynamic method is commonly recommended for non ideal liquid mixtures at low pressure, such as ethanol and water?", "expected": ["NRTL", "UNIQUAC", "Wilson"], "match": "contains", "tags": ["aspen_plus", "thermo"]}
+{"id": "p03", "prompt": "A distillation column in Aspen Plus will not converge. Name one common first thing to check.", "expected": ["specification", "reflux", "degrees of freedom", "initial estimate", "stages", "feed stage"], "match": "contains", "tags": ["aspen_plus", "troubleshooting"]}
+{"id": "p04", "prompt": "What does the RadFrac block model in Aspen Plus?", "expected": ["rigorous", "distillation", "column"], "match": "regex", "tags": ["aspen_plus", "blocks"]}
+{"id": "p05", "prompt": "In Aspen HYSYS, what is the purpose of a Recycle logical operation?", "expected": ["recycle", "iterat", "converge", "tear"], "match": "regex", "tags": ["hysys", "flowsheet"]}
+{"id": "p06", "prompt": "Water boils at what temperature in degrees Celsius at 1 atm? Answer with only the number.", "expected": "100", "match": "numeric", "tolerance": 0.5, "tags": ["basics"]}
+{"id": "p07", "prompt": "In Aspen Plus, what block type would you use to model a simple heat exchanger with a fixed outlet temperature on one side?", "expected": ["Heater", "HeatX"], "match": "contains", "tags": ["aspen_plus", "blocks"]}
+{"id": "p08", "prompt": "What is the main difference between a Flash2 block and a Flash3 block in Aspen Plus?", "expected": ["two liquid", "second liquid", "three phase", "three-phase", "two phase"], "match": "regex", "tags": ["aspen_plus", "blocks"]}

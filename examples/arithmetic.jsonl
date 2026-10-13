@@ -1,0 +1,6 @@
+# Sanity set. Any model should score 100% here. Use it to check the pipeline, not the model.
+{"id": "a01", "prompt": "What is 2 + 2? Answer with only the number.", "expected": "4", "match": "numeric", "tags": ["sanity"]}
+{"id": "a02", "prompt": "What is 15 times 3? Answer with only the number.", "expected": "45", "match": "numeric", "tags": ["sanity"]}
+{"id": "a03", "prompt": "What is the capital of Brazil? Answer with only the city name.", "expected": ["Brasilia", "Brasília"], "match": "contains", "tags": ["sanity"]}
+{"id": "a04", "prompt": "Is 17 a prime number? Answer yes or no.", "expected": "yes", "match": "exact", "tags": ["sanity"]}
+{"id": "a05", "prompt": "Convert 100 degrees Celsius to Kelvin. Answer with only the number.", "expected": "373.15", "match": "numeric", "tolerance": 0.2, "tags": ["sanity"]}
